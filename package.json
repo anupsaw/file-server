@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "ts-node src/server",
-    "lint:fix":"./node_modules/.bin/tslint -p tsconfig.json --fix",
+    "lint:fix": "./node_modules/.bin/tslint -p tsconfig.json --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
