@@ -1,4 +1,5 @@
-import { serverConfig } from './settings';
+import { settings } from './settings';
 import { Main } from './main';
+import './lib/extension';
 
-Main.bootstrap().connect(serverConfig.port);
+Main.bootstrap().connect(settings.app.port);

@@ -1,3 +1,11 @@
-export const serverConfig = {
-    port: 12345
+export const settings = {
+    app: {
+        port: 12345
+    },
+    database: {
+        config: {
+            path: '',
+            file: ''
+        }
+    }
 };

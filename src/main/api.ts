@@ -11,15 +11,15 @@ export class AppApi {
         app.use(router);
         app.use('**', api.notFound);
         app.use(api.logError);
-        app.use(api.hanldeError);
+        app.use(api.handleError);
     }
 
     notFound(req: Request, res: Response) {
         res.status(404);
-        res.json(`Request api is not found.`);
+        res.json({ error: `Requested api not found.` });
     }
 
-    hanldeError(err: any, req: Request, res: Response, next: NextFunction) {
+    handleError(err: any, req: Request, res: Response, next: NextFunction) {
         res.status(500);
         res.json({ error: err.message || '0000 : Unknown Error !!!' });
     }
