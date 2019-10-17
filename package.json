@@ -1,15 +1,15 @@
 {
   "name": "file-server",
   "version": "1.0.0",
-  "description": "",
+  "description": "File server is to do all http operation on file.",
   "main": "server.js",
   "scripts": {
     "start": "ts-node src/server",
-    "lint:fix":"./node_modules/.bin/tslint -p tsconfig.json --fix",
+    "lint:fix": "./node_modules/.bin/tslint -p tsconfig.json --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "body-parser": "^1.18.3",
     "cors": "^2.8.4",

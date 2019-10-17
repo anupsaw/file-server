@@ -1,30 +1,31 @@
 import { Router, Request, Response, Application, NextFunction } from 'express';
+import { Http } from '../controllers/http';
 
 export class AppApi {
 
-    public static init(app: Application) {
+    public static init(app: Application): void {
         const api = new AppApi();
-        const router = Router();
+        //  const router = Router();
 
-        // api's routes goes here
-
-        app.use(router);
+        // api routes goes here
+        app.use('/api', Http.routes());
+        //  app.use(router);
         app.use('**', api.notFound);
         app.use(api.logError);
-        app.use(api.hanldeError);
+        app.use(api.handleError);
     }
 
-    notFound(req: Request, res: Response) {
+    public notFound(req: Request, res: Response): void {
         res.status(404);
         res.json(`Request api is not found.`);
     }
 
-    hanldeError(err: any, req: Request, res: Response, next: NextFunction) {
+    public handleError(err: any, req: Request, res: Response, next: NextFunction): void {
         res.status(500);
         res.json({ error: err.message || '0000 : Unknown Error !!!' });
     }
 
-    logError(err: any, req: Request, res: Response, next: NextFunction) {
+    public logError(err: any, req: Request, res: Response, next: NextFunction): void {
         console.error(err);
         next(err);
     }
