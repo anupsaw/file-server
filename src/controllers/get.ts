@@ -12,7 +12,8 @@ export class Get {
         entity = req.params.entity;
         this.db = new Collection(entity);
         try {
-            const data = await this.db.find();
+
+            const data = id ? await this.db.findById(id) : await this.db.find();
             res.send(data);
         } catch (error) {
             next();
