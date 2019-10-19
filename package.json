@@ -1,14 +1,20 @@
 {
-  "name": "file-server",
-  "version": "1.0.0",
+  "name": "@sahaz/file-server",
+  "version": "0.0.8",
   "description": "File server is to do all http operation on file.",
   "main": "server.js",
+  "types": "server.d.ts",
   "scripts": {
     "start": "ts-node src/server",
-    "lint:fix": "./node_modules/.bin/tslint -p tsconfig.json --fix",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "./node_modules/.bin/tsc",
+    "lint:fix": "tslint -p tsconfig.json --fix",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "post": "npm run build && npm version patch && npm publish --access=public"
   },
-  "author": "",
+  "bin": {
+    "file-server": "bin/cli.js"
+  },
+  "author": "Anup Saw",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.18.3",
@@ -22,5 +28,18 @@
     "ts-node": "^6.1.1",
     "tslint": "^5.10.0",
     "typescript": "^2.9.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anupsaw/file-server.git"
+  },
+  "keywords": [
+    "node",
+    "file",
+    "server"
+  ],
+  "bugs": {
+    "url": "https://github.com/anupsaw/file-server/issues"
+  },
+  "homepage": "https://github.com/anupsaw/file-server#readme"
 }

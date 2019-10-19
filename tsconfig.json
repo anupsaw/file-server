@@ -2,11 +2,12 @@
     "compilerOptions": {
         "module": "commonjs",
         "esModuleInterop": true,
+        "declaration": true,
         "target": "es6",
         "noImplicitAny": true,
         "moduleResolution": "node",
-        "sourceMap": true,
-        "outDir": "dist",
+        "sourceMap": false,
+        "outDir": "lib",
         "baseUrl": ".",
         "paths": {
             "*": [
