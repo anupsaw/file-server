@@ -9,10 +9,10 @@
     "build": "./node_modules/.bin/tsc",
     "lint:fix": "tslint -p tsconfig.json --fix",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "publish": "npm run build && npm version patch && npm publish --access=public"
+    "post": "npm run build && npm version patch && npm publish --access=public"
   },
   "bin": {
-    "file-server": "node server"
+    "file-server": " bin/cli.js"
   },
   "author": "Anup Saw",
   "license": "MIT",
