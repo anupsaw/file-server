@@ -2,6 +2,7 @@
 import * as path from 'path';
 import * as fs from 'fs';
 
+const baseFolder = __dirname + '/file-db';
 export class Util {
 
     public static create(): Util {
@@ -30,7 +31,7 @@ export class Util {
         let dir, fileName;
 
         //  baseFolder = (baseFolder === undefined) ? config.appDataFolder : baseFolder;
-        baseFolder = './file-db';
+        baseFolder = baseFolder;
         try {
 
             dir = baseFolder + '/' + entity + 's';
