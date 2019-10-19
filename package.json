@@ -12,7 +12,7 @@
     "post": "npm run build && npm version patch && npm publish --access=public"
   },
   "bin": {
-    "file-server": " bin/cli.js"
+    "file-server": "bin/cli.js"
   },
   "author": "Anup Saw",
   "license": "MIT",
