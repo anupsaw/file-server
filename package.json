@@ -1,6 +1,6 @@
 {
   "name": "@sahaz/file-server",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "File server is to do all http operation on file.",
   "main": "server.js",
   "types": "server.d.ts",
