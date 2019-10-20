@@ -59,6 +59,24 @@
 
   ```
 
+  ## Api Customization
+
+    - api urls can be customized as per the required endpoint
+      - Provide server-config.json file to customize the settings as if now we have only settings as mentioned which can be overridden.
+
+    ```
+    {
+        "port": 12345,
+        "baseUrl": "api",
+        "baseFolder": "file-db/db"
+    }
+    ```
+
+    - Or it can be overridden directly from command line argument
+
+    ```
+    file-server --port 12345 --baseUrl api/custom/v1 --baseFolder custom/db
+    ```
   ## More update is coming soon.
 
 

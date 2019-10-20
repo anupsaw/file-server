@@ -36,7 +36,18 @@
   "keywords": [
     "node",
     "file",
-    "server"
+    "server",
+    "database",
+    "angular",
+    "ui",
+    "api",
+    "http",
+    "post",
+    "put",
+    "get",
+    "backend",
+    "services",
+    "file database"
   ],
   "bugs": {
     "url": "https://github.com/anupsaw/file-server/issues"
