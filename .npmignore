@@ -2,7 +2,8 @@
 
 /dist
 /file-db
-/bin
+/tools
+/git-file.txt
 
 # editor files and folder
 
