@@ -1,7 +1,7 @@
 {
   "name": "@sahaz/file-server",
   "version": "1.0.2",
-  "description": "File server is to do all http operation on file.",
+  "description": "File server is to do CURD operation on file database.",
   "main": "server.js",
   "types": "server.d.ts",
   "scripts": {
@@ -14,7 +14,7 @@
   "bin": {
     "file-server": "bin/cli.js"
   },
-  "author": "Anup Saw",
+  "author": "Anup Saw <anupsaw@gmail.com)>",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.18.3",
@@ -47,7 +47,9 @@
     "get",
     "backend",
     "services",
-    "file database"
+    "file database",
+    "curd",
+    "generic api"
   ],
   "bugs": {
     "url": "https://github.com/anupsaw/file-server/issues"

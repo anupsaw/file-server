@@ -2,6 +2,9 @@
 
  Most of the time UI development start with mock data with no backend service available. Maintaining the mock data does not provide all capability to update or delete the data.
 
+ @sahaz/file-server provide http back generic api with custom url in no time. No Database required to save and do CURD operation.
+  
+
  This package will give you a ability to do all the http operation and maintaining the data.
 
  # Installation and Usage
