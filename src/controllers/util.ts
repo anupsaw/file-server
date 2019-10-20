@@ -1,8 +1,7 @@
 
 import * as path from 'path';
 import * as fs from 'fs';
-
-const baseFolder = __dirname + '/file-db';
+import { config } from '../settings/index';
 export class Util {
 
     public static create(): Util {
@@ -31,7 +30,7 @@ export class Util {
         let dir, fileName;
 
         //  baseFolder = (baseFolder === undefined) ? config.appDataFolder : baseFolder;
-        baseFolder = process.cwd() + '/file-db';
+        baseFolder = process.cwd() + `/${config.baseFolder}`;
         console.log(baseFolder);
         if (!fs.existsSync(baseFolder)) {
             this.mkdir(baseFolder);

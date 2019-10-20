@@ -1,4 +1,4 @@
-import { serverConfig } from './settings';
+import { config } from './settings';
 import { Main } from './main';
 
-Main.bootstrap().connect(serverConfig.port);
+export const server = Main.bootstrap().connect(config.port, config.baseUrl);

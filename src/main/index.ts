@@ -1,4 +1,4 @@
-import express from  'express';
+import express from 'express';
 import { Application } from 'express';
 import { AppMiddleware } from './middleware';
 import { AppApi } from './api';
@@ -16,8 +16,8 @@ export class Main {
         return new Main();
     }
 
-    connect(port: number = 12345) {
-        const info = () => console.info(`server stated on port : ${port}`);
+    connect(port: number = 12345, baseUrl: string) {
+        const info = () => console.info(`server stated on port : ${port} with api url http://localhost:${port}/${baseUrl}`);
         this.app.listen(port, info);
     }
 
