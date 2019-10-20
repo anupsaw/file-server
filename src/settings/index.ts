@@ -1,4 +1,3 @@
-export const serverConfig = {
-    port: 12345,
-    baseUrl: '/api/v1'
-};
+import { Settings } from './settings';
+
+export const config = Settings.create();

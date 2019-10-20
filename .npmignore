@@ -4,6 +4,12 @@
 /file-db
 /tools
 /git-file.txt
+/src
+/file.server.config.json
+/package-lock.json
+/tsconfig.json
+/tslint.json
+/**/*.js.map
 
 # editor files and folder
 

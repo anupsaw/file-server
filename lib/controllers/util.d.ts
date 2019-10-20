@@ -16,7 +16,7 @@ export declare class Util {
     };
     matchData(data: any[], options: {
         [x: string]: any;
-    }, isMatchMany: boolean): any[];
+    }, isMatchMany: boolean): any;
     patchData(to: {
         [x: string]: any;
     }, from: {

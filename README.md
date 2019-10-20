@@ -2,6 +2,9 @@
 
  Most of the time UI development start with mock data with no backend service available. Maintaining the mock data does not provide all capability to update or delete the data.
 
+ @sahaz/file-server provide http back generic api with custom url in no time. No Database required to save and do CURD operation.
+  
+
  This package will give you a ability to do all the http operation and maintaining the data.
 
  # Installation and Usage
@@ -59,6 +62,24 @@
 
   ```
 
+  ## Api Customization
+
+    - api urls can be customized as per the required endpoint
+      - Provide server-config.json file to customize the settings as if now we have only settings as mentioned which can be overridden.
+
+    ```
+    {
+        "port": 12345,
+        "baseUrl": "api",
+        "baseFolder": "file-db/db"
+    }
+    ```
+
+    - Or it can be overridden directly from command line argument
+
+    ```
+    file-server --port 12345 --baseUrl api/custom/v1 --baseFolder custom/db
+    ```
   ## More update is coming soon.
 
 

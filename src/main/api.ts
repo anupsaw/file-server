@@ -1,6 +1,6 @@
 import { Router, Request, Response, Application, NextFunction } from 'express';
 import { Http } from '../controllers/http';
-import { serverConfig } from '../settings/index';
+import { config } from '../settings';
 
 export class AppApi {
 
@@ -9,7 +9,7 @@ export class AppApi {
         //  const router = Router();
 
         // api routes goes here
-        app.use(serverConfig.baseUrl, Http.routes());
+        app.use(`/${config.baseUrl}`, Http.routes());
         //  app.use(router);
         app.use('**', api.notFound);
         app.use(api.logError);

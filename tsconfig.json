@@ -4,9 +4,9 @@
         "esModuleInterop": true,
         "declaration": true,
         "target": "es6",
-        "noImplicitAny": true,
+        "noImplicitAny": false,
         "moduleResolution": "node",
-        "sourceMap": false,
+        "sourceMap": true,
         "outDir": "lib",
         "baseUrl": ".",
         "paths": {

@@ -1,4 +1,2 @@
-export declare const serverConfig: {
-    port: number;
-    baseUrl: string;
-};
+import { Settings } from './settings';
+export declare const config: Settings;
