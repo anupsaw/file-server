@@ -31,7 +31,7 @@ export class Util {
         let dir, fileName;
 
         //  baseFolder = (baseFolder === undefined) ? config.appDataFolder : baseFolder;
-        baseFolder = process.cwd() + '/file-db';;
+        baseFolder = process.cwd() + '/file-db';
         console.log(baseFolder);
         if (!fs.existsSync(baseFolder)) {
             this.mkdir(baseFolder);
