@@ -1,11 +1,8 @@
 # @sahaz/file-server
 
- Most of the time UI development start with mock data with no backend service available. Maintaining the mock data does not provide all capability to update or delete the data.
+Usually, UI development starts with mock data in cases where the backend service is unavailable, delayed or if it's not required. Maintaining the mock data does not provide CURD functionalities.
 
- @sahaz/file-server provide http back generic api with custom url in no time. No Database required to save and do CURD operation.
-  
-
- This package will give you a ability to do all the http operation and maintaining the data.
+ @sahaz/file-server provides http back-end service within no time, with an in-built database and generic/custom api and with CURD operation functionality.
 
  # Installation and Usage
 
@@ -15,7 +12,7 @@
     npm i @sahaz/file-server --save-dev
     ```
 
-- Add the script command in project package file to keep it handy.
+- Add the script command in project package file to keep it handy
   
     ```
     "script": {
@@ -32,7 +29,7 @@
 
 - By default server will start with http://localhost:1234 and apis are available with http://localhost:1234/api
 
-- Posting data on api with any flexible name which is added after api 
+- Posting data on api, with any flexible name which is added after api 
   
   ```
   #Example
@@ -44,7 +41,7 @@
       UI development with ready backend.'
   }
 
-  # Response will be with id which can be used for later operation on the same data for Delete, Update or get
+  # Response will be with "__id" which can later be used on the same data for operations such as  Delete or Update or Get
 
     {
         "__id": 9146499447,
@@ -52,7 +49,7 @@
         "description": "great tool for starting UI development with ready backend."
     }
 
-    # the same data can be get with 
+    # the same data can be Get with 
 
     http://localhost:1234/api/user/9146499447;
 
@@ -65,7 +62,7 @@
   ## Api Customization
 
     - api urls can be customized as per the required endpoint
-      - Provide server-config.json file to customize the settings as if now we have only settings as mentioned which can be overridden.
+      - Provide server-config.json file to customize the settings, as of now, we have only the mentioned settings which can be overridden.
 
     ```
     {
@@ -80,6 +77,6 @@
     ```
     file-server --port 12345 --baseUrl api/custom/v1 --baseFolder custom/db
     ```
-  ## More update is coming soon.
+  ## More update is coming soon......
 
 
