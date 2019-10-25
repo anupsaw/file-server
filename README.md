@@ -2,7 +2,7 @@
 
 Usually, UI development starts with mock data in cases where the backend service is unavailable, delayed or if it's not required. Maintaining the mock data does not provide CURD functionalities.
 
- @sahaz/file-server provides http back-end service within no time, with an in-built database and generic/custom api and with CURD operation functionality.
+ @sahaz/file-server provides rest http back-end api service within no time with desired endpoint url, with an in-built json database and generic/custom api and with CURD operation functionality.
 
  # Installation and Usage
 
@@ -77,6 +77,7 @@ Usually, UI development starts with mock data in cases where the backend service
     ```
     file-server --port 12345 --baseUrl api/custom/v1 --baseFolder custom/db
     ```
+  
   ## More update is coming soon......
 
 

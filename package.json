@@ -1,7 +1,7 @@
 {
   "name": "@sahaz/file-server",
   "version": "1.0.2",
-  "description": "File server is to do CURD operation on file database.",
+  "description": "Ready rest http api with json database for CURD operation.",
   "main": "server.js",
   "types": "server.d.ts",
   "scripts": {
@@ -49,7 +49,9 @@
     "services",
     "file database",
     "curd",
-    "generic api"
+    "generic api",
+    "json database",
+    "rest api"
   ],
   "bugs": {
     "url": "https://github.com/anupsaw/file-server/issues"
