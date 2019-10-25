@@ -1,6 +1,6 @@
 {
   "name": "@sahaz/file-server",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Ready rest http api with json database for CURD operation.",
   "main": "server.js",
   "types": "server.d.ts",
