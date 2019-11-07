@@ -10,7 +10,7 @@ export class Http {
         const routes = Router();
 
         const http = new Http();
-
+        routes.route('/').get((req: Request, res: Response) => res.send('successful'));
         routes.route('/:entity').post(http.post);
         routes.route('/:entity').get(http.get);
         routes.route('/:entity/:id').get(http.get);
