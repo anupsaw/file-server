@@ -18,7 +18,7 @@ export class Main {
 
     connect(port: number = 12345, baseUrl: string) {
         const info = () => console.info(`server stated on port : ${port} with api url http://localhost:${port}/${baseUrl}`);
-        this.app.listen(port, info);
+        this.app.listen(process.env.PORT || port, info);
     }
 
     private init(app: Application) {
