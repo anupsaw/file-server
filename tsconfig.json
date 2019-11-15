@@ -10,6 +10,18 @@
         "outDir": "lib",
         "baseUrl": ".",
         "paths": {
+            "@bl/mod/*":[
+                "bl/*"
+            ],
+            "@bl/mod":[
+                "bl"
+            ],
+            "@bl/mod1/*":[
+                "bl1/*"
+            ],
+            "@bl/mod1":[
+                "bl1"
+            ],
             "*": [
                 "node_modules/*",
                 "src/types/*"

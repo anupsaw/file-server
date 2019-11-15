@@ -1,4 +1,3 @@
-import { config } from './settings';
-import { Main } from './main';
-
-export const server = Main.bootstrap().connect(config.port, config.baseUrl);
+import { Two, One } from '@bl/mod';
+import { One1 } from '@bl/mod1';
+console.log(Two.print(), One.print(), One1.print());
