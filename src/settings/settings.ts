@@ -6,6 +6,7 @@ export class Settings {
     public port = 12345;
     public baseUrl = 'api';
     public baseFolder = 'file-db';
+    public graphQl = false;
     public configuration = `${process.cwd()}/server-config.json`;
 
     private constructor(obj: Partial<Settings> = {}) {
@@ -14,7 +15,7 @@ export class Settings {
         settings = (typeof settings === 'string') ? JSON.parse(settings) : settings;
         obj = { ...obj, ...settings, ...args };
 
-        console.log(obj);
+        // console.log(obj);
         for (const key in obj) {
             if (key && this.hasOwnProperty(key) && typeof obj[key] !== 'function') {
                 this[key] = obj[key];

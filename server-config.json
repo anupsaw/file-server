@@ -1,5 +1,6 @@
 {
     "port": 54321,
     "baseUrl": "api",
-    "baseFolder": "file-db/db"
+    "baseFolder": "file-db/db",
+    "graphQl": false
 }
